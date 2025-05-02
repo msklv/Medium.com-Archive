@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Postmortem Report зачем нужен и как составлять</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Postmortem Report зачем нужен и как составлять</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Postmortem Report(Post-mortem) — прежде всего это командный артефакт.  Набросок или драфт составляется на мероприятии в котором участвуют…
+</section>
+<section data-field="body" class="e-content">
+<section name="af47" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="271b" id="271b" class="graf graf--h3 graf--leading graf--title">Postmortem Report зачем нужен и как составлять</h3><p name="23e0" id="23e0" class="graf graf--p graf-after--h3">Postmortem Report(Post-mortem) — прежде всего это командный артефакт. Набросок или драфт составляется на мероприятии, в котором участвуют все затронутые стороны и команды в мирное от проблем время.</p><p name="4211" id="4211" class="graf graf--p graf-after--p">Postmortem — элемент инженерный культуры. Постоянный процесс работы над ошибками. Попытка выжать из случившегося фиаско — максимум “+”.</p><p name="3b75" id="3b75" class="graf graf--p graf-after--p">Пожалуй самым распространённым вариантом является версия Google, представленная в цикле книг SRE.</p></div><div class="section-inner sectionLayout--outsetColumn"><figure name="64db" id="64db" class="graf graf--figure graf--layoutOutsetCenter graf-after--p"><img class="graf-image" data-image-id="1*IuSk2nrZDUKcbuEOTAl-aw.jpeg" data-width="4608" data-height="3072" data-is-featured="true" src="https://cdn-images-1.medium.com/max/1200/1*IuSk2nrZDUKcbuEOTAl-aw.jpeg"><figcaption class="imageCaption"><a href="https://unsplash.com/s/photos/zunil%2C-guatemala" data-href="https://unsplash.com/s/photos/zunil%2C-guatemala" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">Zunil, Guatemala</a>, <a href="https://unsplash.com/@alschim" data-href="https://unsplash.com/@alschim" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">Alexander Schimmeck@alschim</a></figcaption></figure></div><div class="section-inner sectionLayout--insetColumn"><h4 name="ecc9" id="ecc9" class="graf graf--h4 graf-after--figure">Зачем нужны Postmortem Reports?</h4><p name="3408" id="3408" class="graf graf--p graf-after--h4">Во время реагирования на инциденты команда на 100% сосредоточена на восстановлении сервиса. Им не следует тратить время и умственную энергию на размышления о том, как что-то сделать оптимальным образом, или на глубокое погружение в причину инцидента. Это может ещё больше задержать усилия по исправлению ситуации и усложнить процесс разрешения проблем. Обсуждения Postmortem дают возможность проанализировать случившееся, когда проблема больше не затрагивает пользователей. <strong class="markup--strong markup--p-strong">Postmortem как процесс</strong> <strong class="markup--strong markup--p-strong">направляет внимание, прививает культуру обучения и определяет возможности для улучшения, которые в противном случае были бы упущены.</strong></p><p name="fd3c" id="fd3c" class="graf graf--p graf-after--p">Опубликованный отчёт — столп прозрачности в терминологии Agile.</p><p name="748e" id="748e" class="graf graf--p graf-after--p">Написание Postmortem позволяет вам быстро учиться на своих ошибках и улучшать свои системы и процессы. Хорошо продуманный Postmortem позволяет командам постоянно учиться, служа способом итеративно улучшать вашу инфраструктуру и процесс реагирования на инциденты.</p><p name="6177" id="6177" class="graf graf--p graf-after--p">Не стоит забывать о психологическом аспекте, любой крупный сбой — угнетает команду. Подрезает ей крылья. Рождает внутренние трения и недоверие, что непременно скажется на производительности. Хорошей практикой завершения мероприятия по написанию Postmortem Report может быть строгое воодушевление, и ясность целей.</p><p name="df10" id="df10" class="graf graf--p graf-after--p">Написание Postmortem Report может быть совмещено с ретроспективой. Главное не тянуть слишком долго, участники могут забыть что-то важное уже через пару дней.</p><h3 name="0fa8" id="0fa8" class="graf graf--h3 graf-after--p"><em class="markup--em markup--h3-em">Шаблон от Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy. “Site Reliability Engineering.”.</em></h3><ul class="postList"><li name="d3d9" id="d3d9" class="graf graf--li graf-after--h3">Название / Title (сбой #)</li><li name="b92d" id="b92d" class="graf graf--li graf-after--li">Дата / Date</li><li name="517d" id="517d" class="graf graf--li graf-after--li">Авторы / Authors</li><li name="f8f2" id="f8f2" class="graf graf--li graf-after--li">Статус/Status</li><li name="ad9a" id="ad9a" class="graf graf--li graf-after--li">Краткое описание / Summary</li><li name="fb8f" id="fb8f" class="graf graf--li graf-after--li">Последствия / Impact, Под последствиями понимается воздействие на пользователей, изменение дохода и.т.п</li><li name="ef55" id="ef55" class="graf graf--li graf-after--li">Исходные причины / Root Causes, пояснение обстоятельств , при которых произошёл инцидент. Полезно применять “5 Почему?”</li><li name="9de3" id="9de3" class="graf graf--li graf-after--li">Запускающее событие / Trigger</li><li name="4109" id="4109" class="graf graf--li graf-after--li">Решение / Resolution</li><li name="e68f" id="e68f" class="graf graf--li graf-after--li">Обнаружение / Detection</li><li name="a891" id="a891" class="graf graf--li graf-after--li">Перечень мер / Action Items (Мера, Тип, Ответственное лицо, Ошибка)</li><li name="08b7" id="08b7" class="graf graf--li graf-after--li">Полученные уроки / Lessons Learned</li><li name="3304" id="3304" class="graf graf--li graf-after--li">Что было хорошо / What went well</li><li name="fa02" id="fa02" class="graf graf--li graf-after--li">Что было плохо / What went wrong</li><li name="38e9" id="38e9" class="graf graf--li graf-after--li">В чем нам повезло / Where we got lucky</li><li name="8e3a" id="8e3a" class="graf graf--li graf-after--li">Хронология / Timeline</li><li name="ee55" id="ee55" class="graf graf--li graf-after--li">Вспомогательная информация / Supporting information</li></ul><h3 name="b769" id="b769" class="graf graf--h3 graf-after--li">Внутренние и внешние Postmortem Report</h3><p name="17b5" id="17b5" class="graf graf--p graf-after--h3">Хотя это менее распространено, некоторые организации предпочитают публиковать общедоступную версию вскрытия после инцидента. Это особенно характерно для крупномасштабных служб, у которых есть перебои в работе, затрагивающие большое количество пользователей. Они могут публиковать полный Postmortem Report или (что более вероятно) они публикуют урезанную версию внутреннего отчёта. Вероятно, необходимо очистить некоторую конфиденциальную или личную информацию.</p><p name="fc76" id="fc76" class="graf graf--p graf-after--p">Также практикуется публикация отчётов после критичных сбоев, как один из элементов реанимирования репутации.</p><h3 name="d56b" id="d56b" class="graf graf--h3 graf-after--p">Примеры ведения Postmortem Report у крупных компаний</h3><ul class="postList"><li name="c72d" id="c72d" class="graf graf--li graf-after--h3"><a href="https://blog.lastpass.com/2015/06/lastpass-security-notice.html/comment-page-2/" data-href="https://blog.lastpass.com/2015/06/lastpass-security-notice.html/comment-page-2/" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">LastPass</a></li><li name="8d5f" id="8d5f" class="graf graf--li graf-after--li"><a href="https://aws.amazon.com/message/5467D2/" data-href="https://aws.amazon.com/message/5467D2/" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">AWS</a></li><li name="329c" id="329c" class="graf graf--li graf-after--li"><a href="https://www.twilio.com/blog/2013/07/billing-incident-post-mortem-breakdown-analysis-and-root-cause.html" data-href="https://www.twilio.com/blog/2013/07/billing-incident-post-mortem-breakdown-analysis-and-root-cause.html" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Twilio</a></li><li name="1ee7" id="1ee7" class="graf graf--li graf-after--li"><a href="http://techblog.netflix.com/2012/10/post-mortem-of-october-222012-aws.html" data-href="http://techblog.netflix.com/2012/10/post-mortem-of-october-222012-aws.html" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Netflix</a></li></ul><h3 name="83d4" id="83d4" class="graf graf--h3 graf-after--li">Используемые материалы в статье:</h3><div name="7403" id="7403" class="graf graf--mixtapeEmbed graf-after--h3"><a href="https://sre.google/books/" data-href="https://sre.google/books/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://sre.google/books/"><strong class="markup--strong markup--mixtapeEmbed-strong">Google - Site Reliability Engineering</strong><br><em class="markup--em markup--mixtapeEmbed-em">Discover Site Reliability Engineering, learn about building and maintaining reliable engineering systems, and read…</em>sre.google</a><a href="https://sre.google/books/" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="11a0837b7ad47d8186c9355ce784d209" data-thumbnail-img-id="0*Jj1GtZalaQYeIFXV" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*Jj1GtZalaQYeIFXV);"></a></div><div name="d8f9" id="d8f9" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed"><a href="https://www.atlassian.com/incident-management/postmortem/reports" data-href="https://www.atlassian.com/incident-management/postmortem/reports" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.atlassian.com/incident-management/postmortem/reports"><strong class="markup--strong markup--mixtapeEmbed-strong">Creating postmortem reports | Atlassian</strong><br><em class="markup--em markup--mixtapeEmbed-em">A consistent approach to postmortem reports helps your team identify patterns, trends, and improvement opportunities…</em>www.atlassian.com</a><a href="https://www.atlassian.com/incident-management/postmortem/reports" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock" data-media-id="6c353b3eaad86961ff5a3b7a2ee76497"></a></div><div name="be3d" id="be3d" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed graf--trailing"><a href="https://www.pagerduty.com/resources/learn/incident-postmortem/" data-href="https://www.pagerduty.com/resources/learn/incident-postmortem/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.pagerduty.com/resources/learn/incident-postmortem/"><strong class="markup--strong markup--mixtapeEmbed-strong">What is an incident post-mortem? | PagerDuty</strong><br><em class="markup--em markup--mixtapeEmbed-em">Streamlining the incident post-mortem process is key to helping teams get the most from their post-mortem time…</em>www.pagerduty.com</a><a href="https://www.pagerduty.com/resources/learn/incident-postmortem/" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="fccf97721a088947e5120f90d8746838" data-thumbnail-img-id="0*l_gbZ2mArnpaADd7" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*l_gbZ2mArnpaADd7);"></a></div></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@msklv" class="p-author h-card">Michael Sokolov</a> on <a href="https://medium.com/p/587faefd9f7f"><time class="dt-published" datetime="2021-02-08T19:09:36.903Z">February 8, 2021</time></a>.</p><p><a href="https://medium.com/@msklv/postmortem-report-%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-%D0%BD%D1%83%D0%B6%D0%B5%D0%BD-%D0%B8-%D0%BA%D0%B0%D0%BA-%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D1%82%D1%8C-587faefd9f7f" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 2, 2025.</p></footer></article></body></html>

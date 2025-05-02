@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>TFVC и Git</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">TFVC и Git</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Оценка систем контроля версий (VCS) для Azure DevOps (Бывший TFS)
+</section>
+<section data-field="body" class="e-content">
+<section name="5d48" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="dd4a" id="dd4a" class="graf graf--h3 graf--leading graf--title">TFVC и Git</h3><h4 name="621c" id="621c" class="graf graf--h4 graf-after--h3 graf--subtitle">Оценка систем контроля версий (<strong class="markup--strong markup--h4-strong">VCS</strong>) для Azure DevOps (Бывший TFS)</h4><figure name="566c" id="566c" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*XIJ_ZQOmc0whHVBvaX_cUg@2x.jpeg" data-width="2059" data-height="636" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*XIJ_ZQOmc0whHVBvaX_cUg@2x.jpeg"></figure><p name="e3f5" id="e3f5" class="graf graf--p graf-after--figure">Для начала нужно разобраться с терминологией:</p><p name="bf00" id="bf00" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Azure DevOps или Team Foundation Server</strong> (TFS, был переименован в 2019г) — это инструмент управления жизненным циклом приложений, который <em class="markup--em markup--p-em">включает</em> в себя компонент <strong class="markup--strong markup--p-strong">системы контроля версий (VCS).</strong></p><p name="c42b" id="c42b" class="graf graf--p graf-after--p">Azure DevOps поддерживает 2 системы версионирования репозиториев (“repo”):</p><h4 name="412c" id="412c" class="graf graf--h4 graf-after--p">Team Foundation Server Version Control (TFVC)</h4><ul class="postList"><li name="6117" id="6117" class="graf graf--li graf-after--h4">Централизованная система</li><li name="8afd" id="8afd" class="graf graf--li graf-after--li">Проприетарная технология Microsoft, поддерживаемая только ее продуктами</li></ul><h4 name="b4d2" id="b4d2" class="graf graf--h4 graf-after--li">Git</h4><ul class="postList"><li name="f73e" id="f73e" class="graf graf--li graf-after--h4">Распределенная система, устойчивая к разделению</li><li name="ec88" id="ec88" class="graf graf--li graf-after--li">Open Source</li></ul><blockquote name="5c34" id="5c34" class="graf graf--pullquote graf-after--li">Система контроля версий — это основа автоматизации.</blockquote><h3 name="6859" id="6859" class="graf graf--h3 graf-after--pullquote">Факты:</h3><ul class="postList"><li name="8580" id="8580" class="graf graf--li graf-after--h3">На июнь 2022г Microsoft рекомендует Git.</li><li name="3b5c" id="3b5c" class="graf graf--li graf-after--li">Впервые Git появился в Visual Studio 2013</li><li name="5fdc" id="5fdc" class="graf graf--li graf-after--li">Существует более-менее официальная утилита двухсторонней конвертации TFVC &lt;-&gt; Git.</li><li name="7b31" id="7b31" class="graf graf--li graf-after--li">Microsoft убрала свои внутренние продукты из TFVC. Исходные коды Windows и Office теперь находятся в Git в Azure DevOps.</li><li name="39e9" id="39e9" class="graf graf--li graf-after--li">Развитие TFVC прекращено, технология оставлена для совместимости со старыми проектами.</li><li name="6165" id="6165" class="graf graf--li graf-after--li">Microsoft купила GitHub в 2018г, который теперь является основным направлением для предложений, связанных с DevOps, поэтому многие люди, которые внесли свой вклад в Azure DevOps, перешли на GitHub.</li><li name="ea8c" id="ea8c" class="graf graf--li graf-after--li">Git — дефакто стандарт IT Отрасли.</li><li name="d642" id="d642" class="graf graf--li graf-after--li">Поддержка TFVC для Eclipse и Visual Studio Code, а также для Linux/Mac официально объявлена ​​устаревшей или прекращена.</li></ul><h3 name="2a04" id="2a04" class="graf graf--h3 graf-after--li">Аналитика:</h3><p name="9985" id="9985" class="graf graf--p graf-after--h3">Для разработчиков на стеке Microsoft картина выглядит так:</p><figure name="4c4f" id="4c4f" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*8qlkoDLszPNlgc1CFLyfhw.png" data-width="1102" data-height="472" src="https://cdn-images-1.medium.com/max/800/1*8qlkoDLszPNlgc1CFLyfhw.png"><figcaption class="imageCaption">Использование различных VCS комюнити SQL Server Central в 2008–2020г. , <a href="https://www.red-gate.com/blog/why-to-use-git-instead-of-tfs-tfvc" data-href="https://www.red-gate.com/blog/why-to-use-git-instead-of-tfs-tfvc" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">Источник</a></figcaption></figure><h3 name="b59f" id="b59f" class="graf graf--h3 graf-after--figure">Почему <strong class="markup--strong markup--h3-strong">Git</strong> сейчас используется больше?</h3><ol class="postList"><li name="f4ef" id="f4ef" class="graf graf--li graf-after--h3">Распределенный характер означает, что Git очень устойчив к авариям, у кого-то всегда будет копия репозитория, также легче добиться высокой доступности сервиса.</li><li name="e9eb" id="e9eb" class="graf graf--li graf-after--li">Возможность использовать широкий круг инструментов GitHub, GitLab, Azure DevOps, Bitbucket, Gitea…</li><li name="7b36" id="7b36" class="graf graf--li graf-after--li">Работа в автономном режиме, вы работаете со своим полным репозиторием вместе с Историей. Вы можете фиксировать изменения, откатывать, просматривать историю и т. д. Вам нужно быть в сети только тогда, когда вы хотите синхронизироваться с удаленным репозиторием.</li><li name="860b" id="860b" class="graf graf--li graf-after--li">В TFVC нет простого способа сохранить состояние ваших изменений (добавления, модификации, удаления файлов) и переключиться на другую ветку кода. Например, чтобы работать над двумя User Story в 2х ветках и переключаться туда и обратно.</li><li name="21c5" id="21c5" class="graf graf--li graf-after--li">Git репозитории значительно компактнее.</li><li name="c232" id="c232" class="graf graf--li graf-after--li">Git позволяет нам создавать локальные Ветки.</li><li name="b888" id="b888" class="graf graf--li graf-after--li">Git делает проверку кода более продуктивной. Git позволяет добавить дополнительный Коммит в Запрос на слияние (Pull Request), и рецензент может просмотреть только этот Коммит. В то время как в TFVS рецензент получает новый запрос на проверку и должен просмотреть все заново.</li><li name="b814" id="b814" class="graf graf--li graf-after--li">В TFVC репозитории хранятся на центральном сервере, и разработчики извлекают рабочую копию, которая представляет собой <strong class="markup--strong markup--li-strong">моментальный снимок</strong> кода в определенный момент времени. С помощью Git разработчики клонируют <strong class="markup--strong markup--li-strong">весь репозиторий</strong> на свои машины, включая всю историю.</li><li name="693e" id="693e" class="graf graf--li graf-after--li">Идея блокировки всего TFVC репозитария при внесении изменений заслуживает отдельного упоминания.</li><li name="e82c" id="e82c" class="graf graf--li graf-after--li">TFVC не позволяет использовать Git Flow (GitHub Flow)</li></ol><h3 name="7e94" id="7e94" class="graf graf--h3 graf-after--li">Плюсы TFVC</h3><ol class="postList"><li name="b11e" id="b11e" class="graf graf--li graf-after--h3">Более простое управление проектами сильными культурными различиями у участников. Это обусловлено тем, что TFVS использует централизованную модель контроля версий, что упрощает управление правами доступа, а также упрощает разрешение конфликтов при слиянии кода.</li><li name="e932" id="e932" class="graf graf--li graf-after--li graf--trailing">Поддержка бинарных файлов. TFVS лучше подходит для управления бинарными файлами лежащими прямо в репозитории, такими как изображения, видео и скомпилированные артефакты — dll, exe и т.п. Это связано с тем, что TFVS на это рассчитан.</li></ol></div></div></section><section name="940b" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="4cd7" id="4cd7" class="graf graf--h3 graf--leading">Ссылки:</h3><p name="b672" id="b672" class="graf graf--p graf-after--h3"><strong class="markup--strong markup--p-strong">—</strong> Подробная статься от Microsoft — <a href="https://docs.microsoft.com/ru-ru/azure/devops/repos/tfvc/comparison-git-tfvc" data-href="https://docs.microsoft.com/ru-ru/azure/devops/repos/tfvc/comparison-git-tfvc" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Сравнение TFVC и Git</a>, и ее <a href="https://docs.microsoft.com/en-us/azure/devops/repos/tfvc/comparison-git-tfvc?view=azure-devops" data-href="https://docs.microsoft.com/en-us/azure/devops/repos/tfvc/comparison-git-tfvc?view=azure-devops" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">английская версия</a>.</p><p name="b2dd" id="b2dd" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">— </strong>Официальная <a href="https://docs.microsoft.com/ru-ru/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp&amp;view=vs-2022" data-href="https://docs.microsoft.com/ru-ru/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp&amp;view=vs-2022" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Документация по управлению версиями Visual Studio</a></p><p name="e95c" id="e95c" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">— </strong>Официальная <a href="https://docs.microsoft.com/ru-ru/azure/devops/repos/git/?view=azure-devops" data-href="https://docs.microsoft.com/ru-ru/azure/devops/repos/git/?view=azure-devops" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Документация по Git для Azure Repos</a></p><p name="d172" id="d172" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">— git-tfs </strong>— двусторонний мост между TFVC и Git. Он собирает коммиты TFVC в репозиторий Git и позволяет вам передавать свои обновления обратно в TFVC.</p><ul class="postList"><li name="70d6" id="70d6" class="graf graf--li graf-after--p"><a href="https://github.com/git-tfs/git-tfs" data-href="https://github.com/git-tfs/git-tfs" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Репозиторий</a></li><li name="4644" id="4644" class="graf graf--li graf-after--li graf--trailing"><a href="https://github.com/git-tfs/git-tfs/blob/master/doc/usecases/migrate_tfs_to_git.md" data-href="https://github.com/git-tfs/git-tfs/blob/master/doc/usecases/migrate_tfs_to_git.md" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Инстукция по преходу</a> TFVC &gt; Git.</li></ul></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@msklv" class="p-author h-card">Michael Sokolov</a> on <a href="https://medium.com/p/53e336830b0f"><time class="dt-published" datetime="2022-06-18T22:23:20.479Z">June 18, 2022</time></a>.</p><p><a href="https://medium.com/@msklv/%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-tfvc-%D0%B8-git-53e336830b0f" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 2, 2025.</p></footer></article></body></html>

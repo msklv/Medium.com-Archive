@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Журналирование архитектурных решений</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Журналирование архитектурных решений</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Architectural Decision Records, ADR
+</section>
+<section data-field="body" class="e-content">
+<section name="6313" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="d90f" id="d90f" class="graf graf--h3 graf--leading graf--title">Журналирование архитектурных решений</h3><h4 name="8c94" id="8c94" class="graf graf--h4 graf-after--h3 graf--subtitle">Architectural Decision Records, ADR</h4><p name="4ab4" id="4ab4" class="graf graf--p graf-after--h4">При Agile разработке продуктов важно быть заранее готовым к большому количеству изменений в архитектуре, и в самом продукте в целом.</p><blockquote name="6a9c" id="6a9c" class="graf graf--blockquote graf-after--p">Готовность к изменениям важнее следования первоначальному плану)</blockquote><blockquote name="b700" id="b700" class="graf graf--blockquote graf-after--blockquote">- Agile-манифест разработки программного обеспечения</blockquote><figure name="4434" id="4434" class="graf graf--figure graf-after--blockquote"><img class="graf-image" data-image-id="1*XINzVhFytZvFBDplqO1eVw.jpeg" data-width="3652" data-height="1095" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*XINzVhFytZvFBDplqO1eVw.jpeg"><figcaption class="imageCaption">Эволюция подхода к изменениям</figcaption></figure><p name="a192" id="a192" class="graf graf--p graf-after--figure">Эволюция архитектуры — важная часть знаний о Продукте и его истории.</p><h4 name="9a34" id="9a34" class="graf graf--h4 graf-after--p">Что такое Архитектурные решения?</h4><p name="4f37" id="4f37" class="graf graf--p graf-after--h4">Одно из самых простых определений Архитектурного решения (Architectural Decision, AD) которые видел, звучит так:</p><blockquote name="948e" id="948e" class="graf graf--blockquote graf-after--p">Любое инженерное решение, изменение которого обходится дорого.<br>- <a href="https://medium.com/@apolomodov" data-href="https://medium.com/@apolomodov" class="markup--anchor markup--blockquote-anchor" rel="nofollow" target="_blank">https://medium.com/@apolomodov</a></blockquote><p name="e401" id="e401" class="graf graf--p graf-after--blockquote">Есть более проработанные определения, но мы в данном случае остановимся на этом.</p><p name="01b8" id="01b8" class="graf graf--p graf-after--p">Важно отметить что:</p><ul class="postList"><li name="8158" id="8158" class="graf graf--li graf-after--p">Решения в области безопасности (Security)</li><li name="b90f" id="b90f" class="graf graf--li graf-after--li">Решения по Управлению Релизами (Release Management) и DevOps</li><li name="bff2" id="bff2" class="graf graf--li graf-after--li">Решения по Управлению Данными (Data Governance)</li></ul><p name="7c6a" id="7c6a" class="graf graf--p graf-after--li">Тоже относятся к архитектурным.</p><h4 name="2cb6" id="2cb6" class="graf graf--h4 graf-after--p">Практика — Architectural Decision Records, ADR</h4><p name="20e0" id="20e0" class="graf graf--p graf-after--h4">Воспользуюсь материалами из <a href="https://adr.github.io" data-href="https://adr.github.io" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">ADR GitHub organization</a>.</p><p name="2bf5" id="2bf5" class="graf graf--p graf-after--p">Чтобы команды могли отслеживать принципиальные изменения в Архитектуре неплохо их записывать(Architectural Decision Records, ADR) и размещать в общедоступном месте. Причем фиксировать решение лучше максимально прозрачным образом с описанием не только самого решения но и:</p><ul class="postList"><li name="0d97" id="0d97" class="graf graf--li graf-after--p">Контекста проблемы или вызова</li><li name="c431" id="c431" class="graf graf--li graf-after--li">Вариантов выбора и и их +/-</li><li name="7f22" id="7f22" class="graf graf--li graf-after--li">Последствий</li><li name="5a53" id="5a53" class="graf graf--li graf-after--li">И самого решения 🤖</li></ul><h4 name="dec6" id="dec6" class="graf graf--h4 graf-after--li">Что улучшает практика:</h4><ul class="postList"><li name="78b0" id="78b0" class="graf graf--li graf-after--h4">Время онбординга разработчиков и архитекторов</li><li name="dfb0" id="dfb0" class="graf graf--li graf-after--li">Время приятия или пересмотра архитектурных решений</li><li name="67d7" id="67d7" class="graf graf--li graf-after--li">Неповторение неудачных решений и подходов</li><li name="d498" id="d498" class="graf graf--li graf-after--li">Уменьшение иллюзии о принятия решений “с потока”</li></ul><h3 name="68e8" id="68e8" class="graf graf--h3 graf-after--li">Характеристики хорошего ADR:</h3><ul class="postList"><li name="9640" id="9640" class="graf graf--li graf-after--h3"><strong class="markup--strong markup--li-strong">Рациональное</strong>: Объясните причины выполнения конкретного AD. Это может включать контекст, плюсы и минусы различных возможных вариантов, сравнение функций, обсуждение затрат и выгод и многое другое.</li><li name="ffa8" id="ffa8" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Конкретное</strong>: каждый ADR должен относиться к одному AD, а не к нескольким AD.</li><li name="6ca0" id="6ca0" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Датированное</strong>: укажите, когда записывается каждый элемент в ADR. Это особенно важно для аспектов, которые могут меняться со временем, таких как затраты, графики, масштабирование и т.п.</li><li name="6de1" id="6de1" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Неизменяемое</strong>: не изменяйте существующую информацию в ADR. Вместо этого внесите изменения в ADR, добавив новую информацию, или замените ADR, создав новую ADR.</li></ul><h4 name="2795" id="2795" class="graf graf--h4 graf-after--li">Характеристики хорошего раздела «Контекст» в ADR:</h4><ul class="postList"><li name="e0ad" id="e0ad" class="graf graf--li graf-after--h4">Объясните ситуацию вашей организации и бизнес-приоритеты.</li><li name="0866" id="0866" class="graf graf--li graf-after--li">Включите обоснование и соображения, основанные на социальных и профессиональных навыках ваших команд.</li><li name="f0d1" id="f0d1" class="graf graf--li graf-after--li">Включите соответствующие плюсы и минусы и опишите их в терминах, которые соответствуют вашим потребностям и целям.</li></ul><h4 name="de3a" id="de3a" class="graf graf--h4 graf-after--li">Характеристики хорошего раздела «Последствия» в ADR:</h4><ul class="postList"><li name="fec0" id="fec0" class="graf graf--li graf-after--h4">Объясните, что следует из принятого решения. Это может включать в себя эффекты, результаты, результаты, последующие действия и многое другое.</li><li name="cd2c" id="cd2c" class="graf graf--li graf-after--li">Включите информацию о любых последующих ADR. Относительно часто один ADR вызывает потребность в большем количестве ADR, например, когда один ADR делает большой всеобъемлющий выбор, который, в свою очередь, создает потребность в более мелких решениях.</li><li name="11f8" id="11f8" class="graf graf--li graf-after--li">Включите любые процессы проверки после действий. Команды обычно пересматривают каждый ADR через месяц, чтобы сравнить информацию о ADR с тем, что произошло на практике, чтобы учиться и развиваться.</li></ul><h4 name="58de" id="58de" class="graf graf--h4 graf-after--li">Новая ADR может заменить предыдущую ADR:</h4><ul class="postList"><li name="0beb" id="0beb" class="graf graf--li graf-after--h4">Когда делается объявление, которое заменяет или делает недействительным предыдущее объявление, необходимо создать новое объявление.</li></ul><h3 name="3529" id="3529" class="graf graf--h3 graf-after--li">Инструменты для ведения ADR</h3><ul class="postList"><li name="df07" id="df07" class="graf graf--li graf-after--h3">Confluence</li><li name="e748" id="e748" class="graf graf--li graf-after--li"><a href="https://github.com/adr/madr" data-href="https://github.com/adr/madr" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">MADR</a></li><li name="4f5c" id="4f5c" class="graf graf--li graf-after--li graf--trailing">Markdown + Git</li></ul></div></div></section><section name="d1a4" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h4 name="0968" id="0968" class="graf graf--h4 graf--leading">Используемые материалы:</h4><div name="bf3a" id="bf3a" class="graf graf--mixtapeEmbed graf-after--h4"><a href="https://adr.github.io/" data-href="https://adr.github.io/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://adr.github.io/"><strong class="markup--strong markup--mixtapeEmbed-strong">Architectural Decision Records</strong><br><em class="markup--em markup--mixtapeEmbed-em">An Architectural Decision (AD) is a software design choice that addresses a functional or non-functional requirement…</em>adr.github.io</a><a href="https://adr.github.io/" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="04b3caf8011bb365d1992ba7fffae82c" data-thumbnail-img-id="0*4UrK4LKiOVrVc0UV" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*4UrK4LKiOVrVc0UV);"></a></div><div name="9b9c" id="9b9c" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed"><a href="https://medium.com/@apolomodov" data-href="https://medium.com/@apolomodov" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/@apolomodov"><strong class="markup--strong markup--mixtapeEmbed-strong">Alexander Polomodov - Medium</strong><br><em class="markup--em markup--mixtapeEmbed-em">Read writing from Alexander Polomodov on Medium. Director of digital ecosystem development department at Tinkoff…</em>medium.com</a><a href="https://medium.com/@apolomodov" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="119bbf5da10cb0d86bc378de8dde7ef2" data-thumbnail-img-id="0*QGFTwykIEFWvQijz" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*QGFTwykIEFWvQijz);"></a></div><h4 name="fe86" id="fe86" class="graf graf--h4 graf-after--mixtapeEmbed">Планируемые улучшения</h4><ul class="postList"><li name="d791" id="d791" class="graf graf--li graf-after--h4">Добавить пример ADR записи</li><li name="b4a2" id="b4a2" class="graf graf--li graf-after--li graf--trailing">Добавить иллюстрации</li></ul></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@msklv" class="p-author h-card">Michael Sokolov</a> on <a href="https://medium.com/p/166596623b2e"><time class="dt-published" datetime="2022-04-12T04:33:23.474Z">April 12, 2022</time></a>.</p><p><a href="https://medium.com/@msklv/%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BD%D1%8B%D1%85-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B9-166596623b2e" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 2, 2025.</p></footer></article></body></html>

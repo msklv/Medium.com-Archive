@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>INVEST User Story</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">INVEST User Story</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Аббревиатура «INVEST» помогает запомнить общепринятый набор критериев или контрольный список для оценки качества пользовательской истории…
+</section>
+<section data-field="body" class="e-content">
+<section name="23b3" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="1151" id="1151" class="graf graf--h3 graf--leading graf--title">INVEST User Story</h3><h3 name="216e" id="216e" class="graf graf--h3 graf-after--h3">Резюме</h3><p name="08b5" id="08b5" class="graf graf--p graf-after--h3">Пользовательская история, User Story — это короткое, «минималистичное» описание задачи, которое формулируется как описание заинтересованным пользователем продукта желаемого функционала от продукта.</p><pre name="5d37" id="5d37" class="graf graf--pre graf-after--p"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">Формула Юзер Стори:<br><strong class="markup--strong markup--pre-strong">Я, как {Роль}, хочу {Что-то}, чтобы {Цель}.</strong></code></pre><p name="9eed" id="9eed" class="graf graf--p graf-after--pre">Каждая User Story должна иметь бизнес <strong class="markup--strong markup--p-strong">критерии приёмки</strong>.</p><figure name="7fc3" id="7fc3" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*pDa76tdqBtgJ4OBL8y_Qdw.png" data-width="2732" data-height="1048" src="https://cdn-images-1.medium.com/max/800/1*pDa76tdqBtgJ4OBL8y_Qdw.png"><figcaption class="imageCaption">Пример User Story в Azure DevOps</figcaption></figure><h3 name="500c" id="500c" class="graf graf--h3 graf-after--figure">Зачем нужна User Story</h3><p name="f22a" id="f22a" class="graf graf--p graf-after--h3">Как правило, <strong class="markup--strong markup--p-strong">представители бизнеса не могут писать ТЗ на разработку </strong>(и не должны, и нецелесообразно). Они не погружены в технический контекст, и не могут оценить уровень глупости даже если им кто-то поможет в написании. В техническом аспекте, конечно.</p><p name="d0ed" id="d0ed" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Это так. И это нормально. </strong>И с этим можно и нужно работать.</p><p name="5030" id="5030" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Зачем? </strong>Нам же как-то нужно фиксировать требования бизнеса. Бэклог спринта не может быть аморфным, и неплохо иметь инструмент, позволяющий показать, что вот этот кусочек работы сделан?</p><p name="8717" id="8717" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Как?</strong> Вероятно, при описании требований бизнес-пользователи не должны выходить из бизнес контекста. При этом у разработчиков и других исполнителей должно быть достаточно информации для понимания — что именно от них хотят. И самым распространённым инструментом для описания требований является связка <strong class="markup--strong markup--p-strong">User Strory + Критерии приёмки</strong>.</p><h3 name="a266" id="a266" class="graf graf--h3 graf-after--p">INVEST — способ сделать хорошо</h3><p name="b23c" id="b23c" class="graf graf--p graf-after--h3">Аббревиатура «INVEST» помогает запомнить общепринятый набор критериев или контрольный список для оценки качества пользовательской истории. Если история не соответствует одному из этих критериев, команда может захотеть переформулировать её или даже подумать о переписывании (что часто приводит к физическому разрыву старой карты истории и написанию новой).</p><h3 name="e838" id="e838" class="graf graf--h3 graf-after--p">Хорошая пользовательская история должна быть:</h3><ul class="postList"><li name="5ecd" id="5ecd" class="graf graf--li graf-after--h3">«I» Independent — Независимой (от всех остальных)</li><li name="7d9b" id="7d9b" class="graf graf--li graf-after--li">«N» Negotiable — Обсуждаемая (не конкретный контракт на функции)</li><li name="378d" id="378d" class="graf graf--li graf-after--li">«V» Valuable — Ценная для потребителя (или вертикальная )</li><li name="34df" id="34df" class="graf graf--li graf-after--li">«E» Estimable — Оцениваемая (в хорошем приближении)</li><li name="094c" id="094c" class="graf graf--li graf-after--li">«S» Small — Короткая (чтобы уместиться в итерации)</li><li name="4a4a" id="4a4a" class="graf graf--li graf-after--li">«Т» Testable — Тестируемая (в принципе, даже если ещё нет теста)</li></ul><h4 name="918d" id="918d" class="graf graf--h4 graf-after--li">UPD: User Story в SAFe ( Видео 3 мин)</h4><figure name="a7de" id="a7de" class="graf graf--figure graf--iframe graf-after--h4"><iframe src="https://www.youtube.com/embed/Fwp2J-Fw9hs?feature=oembed" width="700" height="393" frameborder="0" scrolling="no"></iframe><figcaption class="imageCaption">Написание User Story в SAFe</figcaption></figure><h3 name="cef6" id="cef6" class="graf graf--h3 graf-after--figure">Происхождение</h3><ul class="postList"><li name="d75c" id="d75c" class="graf graf--li graf-after--h3">2003: контрольный список INVEST для быстрой оценки пользовательских историй берет свое начало в статье Билла Уэйка, в котором аббревиатура SMART (Specific, Measurable, Achievable, Relevant, Time-boxed) была изменена для задач, возникающих в результате технической декомпозиции пользовательских историй.</li><li name="592c" id="592c" class="graf graf--li graf-after--li">2004: аббревиатура INVEST входит в число техник, рекомендованных Майком Коном в книге Майка Кона «Применение пользовательских историй », которая подробно обсуждает ее в главе 2.</li></ul><h3 name="f75a" id="f75a" class="graf graf--h3 graf-after--li">Ссылки на источники</h3><ul class="postList"><li name="e94b" id="e94b" class="graf graf--li graf-after--h3"><a href="https://scrumtrek.ru/" data-href="https://scrumtrek.ru/" class="markup--anchor markup--li-anchor" rel="nofollow noopener" target="_blank">https://scrumtrek.ru/</a></li><li name="1ad1" id="1ad1" class="graf graf--li graf-after--li graf--trailing"><a href="https://www.agilealliance.org/glossary/invest" data-href="https://www.agilealliance.org/glossary/invest" class="markup--anchor markup--li-anchor" rel="nofollow noopener" target="_blank">https://www.agilealliance.org/glossary/invest</a></li></ul></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@msklv" class="p-author h-card">Michael Sokolov</a> on <a href="https://medium.com/p/8c200266a3d7"><time class="dt-published" datetime="2021-02-02T12:02:59.872Z">February 2, 2021</time></a>.</p><p><a href="https://medium.com/@msklv/invest-user-story-8c200266a3d7" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 2, 2025.</p></footer></article></body></html>

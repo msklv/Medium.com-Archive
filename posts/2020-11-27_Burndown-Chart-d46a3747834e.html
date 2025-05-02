@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Burndown Chart</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Burndown Chart</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Диаграмма сгорания (Burndown Chart)  — диаграмма, показывающая динамику превращения объёма элементов ценности из необходимых клиенту в…
+</section>
+<section data-field="body" class="e-content">
+<section name="7758" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="da4a" id="da4a" class="graf graf--h3 graf--leading graf--title">Burndown Chart</h3><p name="50e7" id="50e7" class="graf graf--p graf-after--h3"><strong class="markup--strong markup--p-strong">Диаграмма сгорания (Burndown Chart) </strong>— диаграмма, показывающая динамику превращения объёма элементов ценности из необходимых клиенту в готовые, соответствующие DoD. Также по ней можно определить ориентировочный срок завершения проекта.</p><p name="1dd0" id="1dd0" class="graf graf--p graf-after--p">Не является артефактом фреймворка Scrum, но упоминается в Scrum Guide от 2017г. и 2020г.</p><p name="fad6" id="fad6" class="graf graf--p graf-after--p">Де-факто является основным инструментом визуализации процесса, не только для Scrum, но и для других Agile подходов.</p><h3 name="cebb" id="cebb" class="graf graf--h3 graf-after--p">История возникновения Burndown Chart</h3><p name="aca4" id="aca4" class="graf graf--p graf-after--h3">Первые упоминания диаграммы:</p><ul class="postList"><li name="3bda" id="3bda" class="graf graf--li graf-after--p">Schwaber, K. and Beedle, M. Agile Software Development with Scrum, Prentice Hall, 2002. (burndown — 83–88 pages)</li><li name="f436" id="f436" class="graf graf--li graf-after--li">Schwaber, K. Agile Project Management with Scrum, Microsoft Press, 2004. (burndown charts — 11–12, 140 pages)</li></ul><p name="9acd" id="9acd" class="graf graf--p graf-after--li">Исходные книги не нашёл, Роман Пихлер в книге “Управление продуктом в Scrum” приводит такие данные:</p><blockquote name="6b0f" id="6b0f" class="graf graf--blockquote graf-after--p">График сгорания работ позволяет отслеживать и прогнозировать ход проекта (Schwaber and Beedle, 2002; 83–88). Он основан на скорости предыдущих спринтов и способен предсказывать будущее, так что scrum-команда может на основании этих прогнозов видоизменять продукт и проект нужным ей образом. Он базируется на двух факторах: времени и оставшемся объеме работ из бэклога продукта. График лучше всего составлять и обновлять на обзорном совещании по спринту, когда результаты спринта уже известны.</blockquote><p name="24b7" id="24b7" class="graf graf--p graf-after--blockquote">В своей новой книге “Скрам. Гибкое управление продуктом и бизнесом” Кен Швабер (один из 2х создателей Scrum) описывает диаграмму очень немногословно:</p><figure name="817e" id="817e" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*QBVuHAQtLzLvsLd6xm3y-g.jpeg" data-width="4032" data-height="2268" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*QBVuHAQtLzLvsLd6xm3y-g.jpeg"></figure><p name="61e2" id="61e2" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Внешний вид</strong></p><p name="cab5" id="cab5" class="graf graf--p graf-after--p">Внешний вид диаграммы хорошо описан у Романа Пихлера в книге “Управление продуктом в Scrum”.</p><blockquote name="847e" id="847e" class="graf graf--blockquote graf-after--p">Сначала мы чертим систему координат и на оси х указываем количество спринтов. На оси у мы пишем очки за пользовательскую историю (или другую, более привычную вам единицу измерения усилий). Первая точка на графике — это примерный объем работ на весь бэклог продукта еще до разработки. Для следующей точки нужно определить оставшийся объем работ из бэклога продукта в конце первого спринта. После этого мы проводим линию между этими точками. Она называется сгоранием и показывает скорость, с которой разрабатывается функционал из бэклога продукта. Если мы продлим линию выполнения до оси х, то сможем предсказать, когда примерно проект будет закончен (при условии, что скорость работы и усилия останутся стабильными). Рассмотрим образец графика сгорания работ, показанный на рисунке 4.1.</blockquote><figure name="3abf" id="3abf" class="graf graf--figure graf-after--blockquote"><img class="graf-image" data-image-id="1*PycOHL4_brOYVWHGn_mV9A.jpeg" data-width="842" data-height="388" src="https://cdn-images-1.medium.com/max/800/1*PycOHL4_brOYVWHGn_mV9A.jpeg"><figcaption class="imageCaption">Роман Пихлер “Управление продуктом в Scrum” , 163с</figcaption></figure><figure name="1948" id="1948" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="1*NnVuwyGXt-O8R1ue7D6BEA.png" data-width="2042" data-height="754" src="https://cdn-images-1.medium.com/max/800/1*NnVuwyGXt-O8R1ue7D6BEA.png"><figcaption class="imageCaption">BurnDown Chart</figcaption></figure><h3 name="8ebe" id="8ebe" class="graf graf--h3 graf-after--figure">Минусы и применимость</h3><p name="2a6e" id="2a6e" class="graf graf--p graf-after--h3">Как ни странно у данной визуализации есть минусы.</p><ol class="postList"><li name="815f" id="815f" class="graf graf--li graf-after--p">Точность в первые спринты очень небольшая, ближе к середине мы видим довольно точную картину</li><li name="18a9" id="18a9" class="graf graf--li graf-after--li">Невозможно применять при масштабировании гибких подходов. Всему виной относительность метрики Story Point.</li><li name="9586" id="9586" class="graf graf--li graf-after--li">Неинформативно применять при визуализации и отслеживании рисков внутри итерации. На ней не хватает трекинга:<br> — Исправления багов и ошибок<br> — Уменьшения технологического долга<br> — Адаптации архитектуры на будущее<br>У всех вышеперечисленных работ, которые без сомнений делаются в каждый спринт, Story Point = 0.</li><li name="1aaa" id="1aaa" class="graf graf--li graf-after--li">Не прозрачны изменения в объёме оставшейся работы в бэклоге. Когда что-то добавляется, убирается, переоценивается. <br>Поэтому лучше работает <strong class="markup--strong markup--li-strong">Burnup Chart</strong>.</li><li name="9680" id="9680" class="graf graf--li graf-after--li">Возможно лучшей альтернативой “внутри” спринта может оказаться <strong class="markup--strong markup--li-strong">Cumulative Flow Chart</strong>.</li></ol><h3 name="76b1" id="76b1" class="graf graf--h3 graf-after--li">Вариации</h3><p name="b7e9" id="b7e9" class="graf graf--p graf-after--h3">Burndown chart чрезвычайно популярна и имеет множество ответвлений и модификаций:</p><h3 name="44b7" id="44b7" class="graf graf--h3 graf-after--p"><strong class="markup--strong markup--h3-strong">Sprint Burndown</strong></h3><p name="7a13" id="7a13" class="graf graf--p graf-after--h3"><strong class="markup--strong markup--p-strong">Sprint Burndown</strong> — рассматривается в книге Романа Пихлера, но принципиальных отличий не приводится, и к ней применимы все недостатки основной. Диаграмма сгорания работ в спринте как и беклог спринта в основном обслуживают команду, поскольку они облегчают самоорганизацию.</p><h3 name="6a71" id="6a71" class="graf graf--h3 graf-after--p"><strong class="markup--strong markup--h3-strong">Epic Burndown</strong></h3><p name="8dd9" id="8dd9" class="graf graf--p graf-after--h3"><a href="https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-epic-burndown-report/" data-href="https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-epic-burndown-report/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">Epic Burndown</strong></a><strong class="markup--strong markup--p-strong"> — </strong>показывает, как ваша команда продвигается в работе над эпиком. Эпик— это большая пользовательская история, которую можно разбить на несколько более мелких историй. В отчёте будут показаны данные, основанные на оценочной статистике, которую использует ваша доска в Jira Atlassian.</p><figure name="c73f" id="c73f" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*lgzj1UfkQZWM6Dhf" data-width="1163" data-height="523" alt="Epic Burndown — визуализация хода работ над Эпиком в Jira Atlassian." src="https://cdn-images-1.medium.com/max/800/0*lgzj1UfkQZWM6Dhf"><figcaption class="imageCaption"><a href="https://www.atlassian.com/ru/agile/tutorials/burndown-charts" data-href="https://www.atlassian.com/ru/agile/tutorials/burndown-charts" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">Пояснения к диаграмме Burndown для эпиков</a></figcaption></figure><h3 name="c50c" id="c50c" class="graf graf--h3 graf-after--figure"><strong class="markup--strong markup--h3-strong">Burnup chart</strong></h3><p name="5d18" id="5d18" class="graf graf--p graf-after--h3"><strong class="markup--strong markup--p-strong">Burnup chart (Диаграмма сжигания, диаграмма сгорания наоборот)</strong> — также отображает объем выполненной работы и общий объем работы во временном аспекте. Разделение объёма работы и прогресса выгодно отличает от Burndown, где за эти показатели визуализируются одной линией. По верхней линии можно быстро понять когда что-то добавлялось, убиралось или переоценивалось. В книгах на наддай момент график упоминается, но примеров не приводится.</p><figure name="c960" id="c960" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*vhyRmucMhFQC0EkVDaHEvw.png" data-width="2320" data-height="940" src="https://cdn-images-1.medium.com/max/800/1*vhyRmucMhFQC0EkVDaHEvw.png"><figcaption class="imageCaption">BurnUp Chart</figcaption></figure><h3 name="4089" id="4089" class="graf graf--h3 graf-after--figure"><strong class="markup--strong markup--h3-strong">Columnar Burnup chart</strong></h3><p name="9662" id="9662" class="graf graf--p graf-after--h3"><strong class="markup--strong markup--p-strong">Columnar Burnup chart (Столбиковая диаграмма сгорания) </strong>— более сложная версия диаграммы (Cohn, 2005; 221–224, Пихлер, 2017; 164–166).</p><blockquote name="db84" id="db84" class="graf graf--blockquote graf-after--p">Столбиковая диаграмма сгорания работ обладает всеми свойствами соответствующего графика, но проводит границу между переоценкой элементов и выполнением работы, с одной<br>стороны, и добавлением и исключением элементов бэклога продукта — с другой.</blockquote><figure name="95eb" id="95eb" class="graf graf--figure graf-after--blockquote graf--trailing"><img class="graf-image" data-image-id="1*BpvoQ75E3qJe2jfNl6Gsng.jpeg" data-width="816" data-height="450" src="https://cdn-images-1.medium.com/max/800/1*BpvoQ75E3qJe2jfNl6Gsng.jpeg"><figcaption class="imageCaption">Роман Пихлер “Управление продуктом в Scrum” , 165с</figcaption></figure></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@msklv" class="p-author h-card">Michael Sokolov</a> on <a href="https://medium.com/p/d46a3747834e"><time class="dt-published" datetime="2020-11-27T23:28:38.240Z">November 27, 2020</time></a>.</p><p><a href="https://medium.com/@msklv/burndown-chart-d46a3747834e" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 2, 2025.</p></footer></article></body></html>
